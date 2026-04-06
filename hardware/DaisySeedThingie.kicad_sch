@@ -6669,7 +6669,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Potentiometer"
+		(symbol "Device:R_Potentiometer_MountingPin"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -6678,15 +6678,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "RV"
-				(at -4.445 0 90)
+				(at -8.255 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "R_Potentiometer"
-				(at -2.54 0 90)
+			(property "Value" "R_Potentiometer_MountingPin"
+				(at -6.35 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -6711,7 +6711,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Potentiometer"
+			(property "Description" "Potentiometer with a mounting pin"
 				(at 0 0 0)
 				(effects
 					(font
@@ -6738,7 +6738,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_Potentiometer_0_1"
+			(symbol "R_Potentiometer_MountingPin_0_1"
 				(rectangle
 					(start 1.016 2.54)
 					(end -1.016 -2.54)
@@ -6752,7 +6752,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508) (xy 1.143 0)
+						(xy 1.143 0) (xy 2.286 0.508) (xy 2.286 -0.508)
 					)
 					(stroke
 						(width 0)
@@ -6775,7 +6775,45 @@
 					)
 				)
 			)
-			(symbol "R_Potentiometer_1_1"
+			(symbol "R_Potentiometer_MountingPin_1_1"
+				(polyline
+					(pts
+						(xy -2.032 1.016) (xy -2.032 -1.016)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(text "Mounting"
+					(at -1.651 0 900)
+					(effects
+						(font
+							(size 0.381 0.381)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.048)
+					(name "MountPin"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -7018,7 +7056,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "https://www.mouser.com/datasheet/3/315/1/EG2219.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8826,16 +8864,34 @@
 		(uuid "14150274-d18d-4937-87f2-cec420f113c7")
 	)
 	(junction
+		(at 189.23 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "18ca257e-0379-4909-be53-287cfdbfadea")
+	)
+	(junction
 		(at 58.42 175.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1de8f229-e68f-48c1-9904-2c1078417aa9")
 	)
 	(junction
+		(at 213.36 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "253905a3-588b-42a1-b673-61e473eae04e")
+	)
+	(junction
 		(at 146.05 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "28766cfe-abf0-47f5-9f43-118cd7eb4e40")
+	)
+	(junction
+		(at 189.23 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29ed730a-5b12-4172-85ab-c8015f702ecd")
 	)
 	(junction
 		(at 50.8 139.7)
@@ -8964,10 +9020,10 @@
 		(uuid "b168901b-9d9a-4477-9a59-971cef76dec4")
 	)
 	(junction
-		(at 40.64 35.56)
+		(at 213.36 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b8a19fa8-6267-4ff9-be73-891b3238f7f0")
+		(uuid "b84becd6-4ad5-44b6-bc2f-7f243d98ce89")
 	)
 	(junction
 		(at 77.47 175.26)
@@ -9000,7 +9056,7 @@
 		(uuid "cd9916f4-f568-4346-b76b-0d5657c20b01")
 	)
 	(junction
-		(at 39.37 151.13)
+		(at 50.8 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ec918d3f-079d-4515-a1ad-1235b691f9a2")
@@ -9087,7 +9143,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 149.86) (xy 22.86 149.86)
+			(xy 33.02 153.67) (xy 34.29 153.67)
 		)
 		(stroke
 			(width 0)
@@ -9107,7 +9163,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 149.86) (xy 22.86 147.32)
+			(xy 34.29 153.67) (xy 34.29 151.13)
 		)
 		(stroke
 			(width 0)
@@ -9247,7 +9303,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 147.32) (xy 34.29 147.32)
+			(xy 41.91 151.13) (xy 45.72 151.13)
 		)
 		(stroke
 			(width 0)
@@ -9267,7 +9323,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 151.13) (xy 45.72 152.4)
+			(xy 57.15 154.94) (xy 57.15 156.21)
 		)
 		(stroke
 			(width 0)
@@ -9284,16 +9340,6 @@
 			(type default)
 		)
 		(uuid "2db327a0-3ea6-4f19-9b17-e50dcbeda5ac")
-	)
-	(wire
-		(pts
-			(xy 63.5 43.18) (xy 63.5 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2dd65703-d48c-4429-9b1c-271d8b66e245")
 	)
 	(wire
 		(pts
@@ -9334,6 +9380,16 @@
 			(type default)
 		)
 		(uuid "3adf5332-067e-4f01-a90b-35572addb77e")
+	)
+	(wire
+		(pts
+			(xy 208.28 26.67) (xy 213.36 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40c85b29-0240-4fbc-bda7-a4e3c72d9423")
 	)
 	(wire
 		(pts
@@ -9384,6 +9440,16 @@
 			(type default)
 		)
 		(uuid "44fa4635-91b2-4c1d-a421-8147b97c4c2f")
+	)
+	(wire
+		(pts
+			(xy 184.15 46.99) (xy 189.23 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4848941d-c263-41e1-929f-d71040d33f63")
 	)
 	(wire
 		(pts
@@ -9477,6 +9543,16 @@
 	)
 	(wire
 		(pts
+			(xy 31.75 25.4) (xy 30.48 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "561f7b39-afd8-49a9-a0dc-10f4a48a04b8")
+	)
+	(wire
+		(pts
 			(xy 97.79 166.37) (xy 97.79 176.53)
 		)
 		(stroke
@@ -9517,7 +9593,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 152.4) (xy 21.59 152.4)
+			(xy 34.29 156.21) (xy 33.02 156.21)
 		)
 		(stroke
 			(width 0)
@@ -9577,6 +9653,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 26.67) (xy 189.23 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62d25903-15e9-4ea6-973f-d3e6c7ea240a")
+	)
+	(wire
+		(pts
 			(xy 72.39 175.26) (xy 77.47 175.26)
 		)
 		(stroke
@@ -9594,6 +9680,16 @@
 			(type default)
 		)
 		(uuid "6694e183-29ab-497b-ba7f-0322ad523a8e")
+	)
+	(wire
+		(pts
+			(xy 73.66 33.02) (xy 73.66 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69d2fe0c-a447-4114-a4d2-a649a3bfb10b")
 	)
 	(wire
 		(pts
@@ -9677,7 +9773,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 147.32) (xy 39.37 151.13)
+			(xy 50.8 151.13) (xy 50.8 154.94)
 		)
 		(stroke
 			(width 0)
@@ -9747,7 +9843,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 151.13) (xy 39.37 151.13)
+			(xy 57.15 154.94) (xy 50.8 154.94)
 		)
 		(stroke
 			(width 0)
@@ -9847,6 +9943,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 46.99) (xy 213.36 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ec610da-be3a-4666-9f54-27b3115a2eb8")
+	)
+	(wire
+		(pts
 			(xy 105.41 62.23) (xy 118.11 62.23)
 		)
 		(stroke
@@ -9867,6 +9973,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 43.18) (xy 208.28 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92089b89-f716-4e9c-b3d4-5235c6ee32f7")
+	)
+	(wire
+		(pts
 			(xy 146.05 36.83) (xy 149.86 36.83)
 		)
 		(stroke
@@ -9884,6 +10000,16 @@
 			(type default)
 		)
 		(uuid "969b3016-8dde-491b-b875-00a779c5a173")
+	)
+	(wire
+		(pts
+			(xy 208.28 22.86) (xy 208.28 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96a2bbdb-38db-4bb2-b0a0-6303b50576b6")
 	)
 	(wire
 		(pts
@@ -9927,7 +10053,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 151.13) (xy 39.37 154.94)
+			(xy 50.8 154.94) (xy 50.8 158.75)
 		)
 		(stroke
 			(width 0)
@@ -9987,16 +10113,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 48.26) (xy 40.64 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1a6ccf7-317f-4389-87b4-e068b5f2ad28")
-	)
-	(wire
-		(pts
 			(xy 73.66 22.86) (xy 86.36 22.86)
 		)
 		(stroke
@@ -10037,6 +10153,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 43.18) (xy 184.15 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a94fc7af-d29a-4d89-8ff5-308cb3b827dd")
+	)
+	(wire
+		(pts
 			(xy 245.11 130.81) (xy 245.11 134.62)
 		)
 		(stroke
@@ -10054,6 +10180,16 @@
 			(type default)
 		)
 		(uuid "ac6f9454-49c3-4631-a0ef-300a84b261d5")
+	)
+	(wire
+		(pts
+			(xy 184.15 22.86) (xy 184.15 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aca362bd-e3d0-4e70-8657-9f57506b7314")
 	)
 	(wire
 		(pts
@@ -10087,7 +10223,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 25.4) (xy 40.64 25.4)
+			(xy 39.37 25.4) (xy 40.64 25.4)
 		)
 		(stroke
 			(width 0)
@@ -10147,7 +10283,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 154.94) (xy 34.29 154.94)
+			(xy 41.91 158.75) (xy 45.72 158.75)
 		)
 		(stroke
 			(width 0)
@@ -10164,16 +10300,6 @@
 			(type default)
 		)
 		(uuid "c2d56848-7ebf-4a13-816c-4886c5d5a743")
-	)
-	(wire
-		(pts
-			(xy 63.5 48.26) (xy 40.64 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c92b7a7c-1f2a-4008-bf79-3149c3a0417b")
 	)
 	(wire
 		(pts
@@ -10347,6 +10473,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 43.18) (xy 63.5 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f30f624b-89a8-4b95-adaf-204f64c6e720")
+	)
+	(wire
+		(pts
 			(xy 163.83 123.19) (xy 163.83 129.54)
 		)
 		(stroke
@@ -10417,7 +10553,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 152.4) (xy 22.86 154.94)
+			(xy 34.29 156.21) (xy 34.29 158.75)
 		)
 		(stroke
 			(width 0)
@@ -14757,7 +14893,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
+		(lib_id "Device:R_Potentiometer_MountingPin")
 		(at 189.23 43.18 0)
 		(mirror x)
 		(unit 1)
@@ -14784,7 +14920,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Desval:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
+		(property "Footprint" "Desval:Potentiometer_Alps_RK09K_Single_Vertical"
 			(at 189.23 43.18 0)
 			(effects
 				(font
@@ -14802,7 +14938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Potentiometer"
+		(property "Description" "Potentiometer with a mounting pin"
 			(at 189.23 43.18 0)
 			(effects
 				(font
@@ -14811,7 +14947,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "B"
+		(property "Label" "B"
 			(at 189.23 43.18 0)
 			(effects
 				(font
@@ -14828,6 +14964,9 @@
 		)
 		(pin "1"
 			(uuid "30f774d7-96ce-4858-9085-8b12a367b60c")
+		)
+		(pin "MP"
+			(uuid "d2e42fea-4a34-48d6-a8eb-8e2ae110324f")
 		)
 		(instances
 			(project "DaisySeedThingie"
@@ -14987,8 +15126,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "128x64"
-			(at 213.36 118.872 0)
+		(property "Value" "SSD1306 0.96\" OLED I2C"
+			(at 202.438 123.444 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15060,6 +15199,15 @@
 			)
 		)
 		(property "LCSC Part Name" "1.3'1.3寸 128*64 OLED显示屏 I2C通讯 SH1106 蓝光"
+			(at 204.47 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Label" "DISPLAY"
 			(at 204.47 115.57 0)
 			(effects
 				(font
@@ -15175,7 +15323,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "MIDI IN"
+		(property "Value" "STEREO 3.5mm"
 			(at 244.475 135.255 0)
 			(effects
 				(font
@@ -15241,7 +15389,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "3.5mm_Stereo"
+		(property "Label" "MIDI IN"
 			(at 255.27 121.8038 0)
 			(effects
 				(font
@@ -15287,7 +15435,7 @@
 				)
 			)
 		)
-		(property "Value" "DC IN"
+		(property "Value" "DC Barrel Jack"
 			(at 22.86 21.59 0)
 			(effects
 				(font
@@ -15304,7 +15452,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.we-online.com/components/products/datasheet/694106301002.pdf"
 			(at 24.13 28.956 0)
 			(effects
 				(font
@@ -15439,7 +15587,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "AUDIO OUT L"
+		(property "Value" "MONO 3.5mm"
 			(at 240.665 93.345 0)
 			(effects
 				(font
@@ -15506,7 +15654,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "3.5mm_Mono"
+		(property "Label" "OUT L"
 			(at 255.27 83.8199 0)
 			(effects
 				(font
@@ -15818,7 +15966,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "MIDI OUT"
+		(property "Value" "STEREO 3.5mm"
 			(at 244.475 151.765 0)
 			(effects
 				(font
@@ -15884,7 +16032,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "3.5mm_Stereo"
+		(property "Label" "MIDI OUT"
 			(at 255.27 138.3138 0)
 			(effects
 				(font
@@ -15987,22 +16135,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "2217f2aa-eb35-482a-b8da-7895b7c8b24e")
 		(property "Reference" "SW3"
-			(at 180.34 64.77 0)
+			(at 180.34 67.818 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "SW_PUSH_6mm"
 			(at 180.34 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
@@ -16030,6 +16178,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "C"
+			(at 180.34 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -16135,7 +16291,7 @@
 				)
 			)
 		)
-		(property "Value" "POWER"
+		(property "Value" "EG2219"
 			(at 52.07 17.78 0)
 			(effects
 				(font
@@ -16153,7 +16309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/315/1/EG2219.pdf"
 			(at 53.34 33.02 0)
 			(effects
 				(font
@@ -16301,6 +16457,15 @@
 				(hide yes)
 			)
 		)
+		(property "Label" "POWER"
+			(at 53.34 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a45de4c7-be95-4587-bc47-74eaa20b47ba")
 		)
@@ -16348,7 +16513,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "277d5300-fbec-41ba-96db-3fa1f8f64d4b")
 		(property "Reference" "J18"
 			(at 256.54 151.1299 0)
@@ -16359,13 +16523,14 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MIDI IN"
+		(property "Value" "JST 01x03"
 			(at 256.54 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
@@ -16393,6 +16558,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "MIDI IN"
+			(at 260.096 153.416 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -16481,7 +16654,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
-		(at 36.83 154.94 180)
+		(at 48.26 158.75 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16489,15 +16662,15 @@
 		(dnp no)
 		(uuid "2bea719a-9bc3-4726-99b2-7da2968b3592")
 		(property "Reference" "D2"
-			(at 36.576 152.4 0)
+			(at 48.006 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "B"
-			(at 36.83 152.654 0)
+		(property "Value" "RED"
+			(at 48.26 156.464 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16506,7 +16679,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm_FlatTop"
-			(at 36.83 154.94 90)
+			(at 48.26 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16515,7 +16688,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 154.94 90)
+			(at 48.26 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16524,7 +16697,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
-			(at 36.83 154.94 0)
+			(at 48.26 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16533,7 +16706,16 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 36.83 154.94 0)
+			(at 48.26 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Label" "B"
+			(at 48.26 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16622,7 +16804,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
+		(lib_id "Device:R_Potentiometer_MountingPin")
 		(at 189.23 22.86 0)
 		(mirror x)
 		(unit 1)
@@ -16649,7 +16831,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Desval:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
+		(property "Footprint" "Desval:Potentiometer_Alps_RK09K_Single_Vertical"
 			(at 189.23 22.86 0)
 			(effects
 				(font
@@ -16667,7 +16849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Potentiometer"
+		(property "Description" "Potentiometer with a mounting pin"
 			(at 189.23 22.86 0)
 			(effects
 				(font
@@ -16676,7 +16858,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "A"
+		(property "Label" "A"
 			(at 189.23 22.86 0)
 			(effects
 				(font
@@ -16693,6 +16875,9 @@
 		)
 		(pin "1"
 			(uuid "e3385439-6272-4a1a-acd1-dc3c444a3431")
+		)
+		(pin "MP"
+			(uuid "5237da48-bae1-4b3e-afbc-05fa8be6d0ae")
 		)
 		(instances
 			(project ""
@@ -16903,7 +17088,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 26.67 147.32 90)
+		(at 38.1 151.13 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16911,7 +17096,7 @@
 		(dnp no)
 		(uuid "33fed182-b25d-4114-9941-1e96380e19e2")
 		(property "Reference" "R1"
-			(at 26.67 142.748 90)
+			(at 38.1 146.558 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16919,7 +17104,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 26.67 144.78 90)
+			(at 38.1 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16927,7 +17112,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 26.67 149.098 90)
+			(at 38.1 152.908 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16936,7 +17121,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 147.32 0)
+			(at 38.1 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16945,7 +17130,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 26.67 147.32 0)
+			(at 38.1 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17384,7 +17569,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "AUDIO IN LR"
+		(property "Value" "STEREO 3.5mm"
 			(at 244.475 37.465 0)
 			(effects
 				(font
@@ -17450,7 +17635,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "3.5mm_Stereo"
+		(property "Label" "IN LR"
 			(at 255.27 24.0138 0)
 			(effects
 				(font
@@ -17761,7 +17946,7 @@
 				)
 			)
 		)
-		(property "Value" "ENCODER"
+		(property "Value" "EN11C"
 			(at 127 17.78 0)
 			(effects
 				(font
@@ -17790,6 +17975,15 @@
 		)
 		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch and MP Pin"
 			(at 127 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Label" "ENCODER"
+			(at 127 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17910,7 +18104,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "MONO 3.5mm"
 			(at 179.705 99.695 0)
 			(effects
 				(font
@@ -17977,7 +18171,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "C"
+		(property "Label" "C"
 			(at 194.31 90.1699 0)
 			(effects
 				(font
@@ -18023,12 +18217,13 @@
 				)
 			)
 		)
-		(property "Value" "MIDI_B"
+		(property "Value" "JUMPER"
 			(at 39.116 197.866 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Jumper:Jumper_2_PTH_SMD_Combo-NO"
@@ -18058,6 +18253,14 @@
 				(hide yes)
 			)
 		)
+		(property "Label" "MIDI B"
+			(at 39.37 197.866 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "61af6ccb-17f9-4289-b963-c4a9868be7e8")
 		)
@@ -18081,7 +18284,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "4d691f42-c2ed-4c8d-81fb-62d18741f616")
 		(property "Reference" "J19"
 			(at 256.54 161.2899 0)
@@ -18092,13 +18294,14 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MIDI OUT"
+		(property "Value" "JST 01x03"
 			(at 256.54 163.8299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
@@ -18126,6 +18329,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "MIDI OUT"
+			(at 260.604 163.068 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -18979,7 +19190,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "62b8886d-0e1e-4691-bb76-17cd581eced3")
 		(property "Reference" "J4"
 			(at 111.76 35.56 0)
@@ -18989,12 +19199,13 @@
 				)
 			)
 		)
-		(property "Value" "COMPONENTS"
+		(property "Value" "02x17 PIN CONNECTOR"
 			(at 111.76 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x17_P2.54mm_Vertical"
@@ -19022,6 +19233,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "COMPONENTS"
+			(at 111.506 38.608 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "8"
@@ -19341,22 +19560,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "68e3903e-3b40-4a83-bb97-4a3a181866c0")
 		(property "Reference" "SW5"
-			(at 203.2 64.77 0)
+			(at 203.2 67.818 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "SW_PUSH_6mm"
 			(at 203.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
@@ -19384,6 +19603,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "D"
+			(at 203.2 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -19545,7 +19772,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "77a7e947-b1b0-4fda-accc-8bb96763b0cb")
 		(property "Reference" "J5"
 			(at 156.21 30.48 0)
@@ -19555,12 +19781,13 @@
 				)
 			)
 		)
-		(property "Value" "DAISY PINS"
+		(property "Value" "02x20 PIN CONNECTOR"
 			(at 156.21 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical"
@@ -19588,6 +19815,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "DAISY PINS"
+			(at 155.956 33.528 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "33"
@@ -20604,7 +20839,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "8df3a141-8490-4e31-ab41-58720ee55ef2")
 		(property "Reference" "JP3"
 			(at 39.37 187.96 0)
@@ -20614,12 +20848,13 @@
 				)
 			)
 		)
-		(property "Value" "MIDI_A"
+		(property "Value" "JUMPER"
 			(at 39.37 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Jumper:Jumper_2_PTH_SMD_Combo-NC"
@@ -20647,6 +20882,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "MIDI A"
+			(at 39.116 190.754 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -20936,7 +21179,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "99b0cf9a-4cb7-4093-bd97-da65fbd6eff9")
 		(property "Reference" "J8"
 			(at 215.9 151.1299 0)
@@ -20947,13 +21189,14 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AUDIO IN"
+		(property "Value" "JST 01x03"
 			(at 215.9 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
@@ -20983,6 +21226,14 @@
 				(hide yes)
 			)
 		)
+		(property "Label" "AUDIO IN"
+			(at 220.218 152.908 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5602483e-51fb-4a1d-a4fe-5e09e53e4228")
 		)
@@ -21009,7 +21260,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9a5464a0-6e69-4e0a-b007-f9ebcdbf4468")
 		(property "Reference" "JP1"
 			(at 39.37 165.1 0)
@@ -21019,12 +21269,13 @@
 				)
 			)
 		)
-		(property "Value" "MIDI_B"
+		(property "Value" "JUMPER"
 			(at 39.37 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Jumper:Jumper_2_PTH_SMD_Combo-NO"
@@ -21054,6 +21305,14 @@
 				(hide yes)
 			)
 		)
+		(property "Label" "MIDI B"
+			(at 39.624 168.148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d456e210-1e99-49f1-8bd1-6986c5cdc122")
 		)
@@ -21077,22 +21336,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9bbc37c6-621f-4831-9169-42299799d862")
 		(property "Reference" "SW4"
-			(at 201.93 50.8 0)
+			(at 201.93 53.848 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "B"
+		(property "Value" "SW_PUSH_6mm"
 			(at 201.93 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
@@ -21120,6 +21379,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "B"
+			(at 201.93 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -21157,7 +21424,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "A"
+		(property "Value" "MONO 3.5mm"
 			(at 128.905 107.315 0)
 			(effects
 				(font
@@ -21224,7 +21491,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "A"
+		(property "Label" "A"
 			(at 143.51 97.7899 0)
 			(effects
 				(font
@@ -21261,10 +21528,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a023d710-267e-471f-a98e-bd673de6980f")
 		(property "Reference" "J7"
-			(at 194.31 129.5399 0)
+			(at 193.548 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21272,13 +21538,14 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MICRO SD"
+		(property "Value" "01x06 PIN CONNECTOR"
 			(at 194.31 132.0799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
@@ -21306,6 +21573,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "MICRO SD"
+			(at 192.024 140.462 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -21421,7 +21696,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "AUDIO OUT R"
+		(property "Value" "MONO 3.5mm"
 			(at 240.665 108.585 0)
 			(effects
 				(font
@@ -21488,7 +21763,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "3.5mm_Mono"
+		(property "Label" "OUT R"
 			(at 255.27 99.0599 0)
 			(effects
 				(font
@@ -21585,7 +21860,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED_Small")
-		(at 36.83 147.32 180)
+		(at 48.26 151.13 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21593,15 +21868,15 @@
 		(dnp no)
 		(uuid "aac6e8f1-6e1d-4b4f-91f6-345c121c8f35")
 		(property "Reference" "D1"
-			(at 36.576 144.78 0)
+			(at 48.006 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "A"
-			(at 36.83 145.034 0)
+		(property "Value" "RED"
+			(at 48.26 148.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21610,7 +21885,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D5.0mm_FlatTop"
-			(at 36.83 147.32 90)
+			(at 48.26 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21619,7 +21894,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 36.83 147.32 90)
+			(at 48.26 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21628,7 +21903,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode, small symbol"
-			(at 36.83 147.32 0)
+			(at 48.26 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21637,7 +21912,16 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 36.83 147.32 0)
+			(at 48.26 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Label" "A"
+			(at 48.26 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21795,7 +22079,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 34.29 25.4 90)
+		(at 35.56 25.4 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21804,15 +22088,15 @@
 		(fields_autoplaced yes)
 		(uuid "b061be51-e70f-4c4d-9caf-cc938829bf12")
 		(property "Reference" "F1"
-			(at 34.29 19.05 90)
+			(at 35.56 19.05 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Fuse"
-			(at 34.29 21.59 90)
+		(property "Value" "5x20mm"
+			(at 35.56 21.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21820,7 +22104,7 @@
 			)
 		)
 		(property "Footprint" "Fuses:65600001409"
-			(at 34.29 27.178 90)
+			(at 35.56 27.178 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21829,7 +22113,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 34.29 25.4 0)
+			(at 35.56 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21838,7 +22122,16 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 34.29 25.4 0)
+			(at 35.56 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Label" "Fuse"
+			(at 35.56 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21863,7 +22156,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 16.51 149.86 0)
+		(at 27.94 153.67 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -21872,15 +22165,15 @@
 		(dnp no)
 		(uuid "b14df1c4-9412-4303-b1f6-304facd015f8")
 		(property "Reference" "J1"
-			(at 16.51 158.75 0)
+			(at 27.94 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "LEDS"
-			(at 16.51 156.21 0)
+		(property "Value" "01x02 PIN CONNECTOR"
+			(at 27.94 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21888,7 +22181,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 16.51 149.86 0)
+			(at 27.94 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21897,7 +22190,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 16.51 149.86 0)
+			(at 27.94 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21906,7 +22199,16 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 16.51 149.86 0)
+			(at 27.94 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Label" "LEDS"
+			(at 27.94 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22007,7 +22309,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b74cea4c-bf90-4970-8bba-2d3082fa9296")
 		(property "Reference" "J3"
 			(at 107.95 93.98 0)
@@ -22017,12 +22318,13 @@
 				)
 			)
 		)
-		(property "Value" "DAISY PINS"
+		(property "Value" "02x20 PIN CONNECTOR"
 			(at 107.95 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x20_P2.54mm_Vertical"
@@ -22050,6 +22352,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "DAISY PINS"
+			(at 107.442 97.282 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "33"
@@ -22189,22 +22499,22 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b7656029-fee0-451c-bea1-5aa3468fe335")
 		(property "Reference" "SW2"
-			(at 180.34 50.8 0)
+			(at 180.34 54.102 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "A"
+		(property "Value" "SW_PUSH_6mm"
 			(at 180.34 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
@@ -22234,6 +22544,14 @@
 				(hide yes)
 			)
 		)
+		(property "Label" "A"
+			(at 180.34 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ce41321b-f8e6-499f-b86c-036af23e50fb")
 		)
@@ -22250,7 +22568,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
+		(lib_id "Device:R_Potentiometer_MountingPin")
 		(at 213.36 43.18 0)
 		(mirror x)
 		(unit 1)
@@ -22277,7 +22595,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Desval:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
+		(property "Footprint" "Desval:Potentiometer_Alps_RK09K_Single_Vertical"
 			(at 213.36 43.18 0)
 			(effects
 				(font
@@ -22295,7 +22613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Potentiometer"
+		(property "Description" "Potentiometer with a mounting pin"
 			(at 213.36 43.18 0)
 			(effects
 				(font
@@ -22304,7 +22622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "D"
+		(property "Label" "D"
 			(at 213.36 43.18 0)
 			(effects
 				(font
@@ -22321,6 +22639,9 @@
 		)
 		(pin "1"
 			(uuid "597aba9a-7a9a-4af5-b311-33c0dd5807fc")
+		)
+		(pin "MP"
+			(uuid "5e2a2cee-7d71-4bc3-b9cd-2c631d2dfa93")
 		)
 		(instances
 			(project "DaisySeedThingie"
@@ -22471,7 +22792,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "beca198f-5cf0-4de4-a998-367b2c339502")
 		(property "Reference" "JP2"
 			(at 39.37 173.99 0)
@@ -22481,12 +22801,13 @@
 				)
 			)
 		)
-		(property "Value" "MIDI_A"
+		(property "Value" "JUMPER"
 			(at 39.37 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "PCM_SparkFun-Jumper:Jumper_2_PTH_SMD_Combo-NC"
@@ -22514,6 +22835,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "MIDI A"
+			(at 39.37 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -22551,7 +22880,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "AUDIO OUT LR"
+		(property "Value" "STEREO 3.5mm"
 			(at 244.475 83.185 0)
 			(effects
 				(font
@@ -22617,7 +22946,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "3.5mm_Stereo"
+		(property "Label" "OUT LR"
 			(at 255.27 69.7338 0)
 			(effects
 				(font
@@ -22732,7 +23061,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "AUDIO IN R"
+		(property "Value" "MONO 3.5mm"
 			(at 240.665 64.135 0)
 			(effects
 				(font
@@ -22799,7 +23128,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "3.5mm_Mono"
+		(property "Label" "IN R"
 			(at 255.27 54.6099 0)
 			(effects
 				(font
@@ -22915,7 +23244,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "D"
+		(property "Value" "MONO 3.5mm"
 			(at 208.915 99.695 0)
 			(effects
 				(font
@@ -22982,7 +23311,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "D"
+		(property "Label" "D"
 			(at 223.52 90.1699 0)
 			(effects
 				(font
@@ -23343,7 +23672,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 26.67 154.94 90)
+		(at 38.1 158.75 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23351,7 +23680,7 @@
 		(dnp no)
 		(uuid "d0941ff5-d703-4aab-bbd3-88b61e40f143")
 		(property "Reference" "R2"
-			(at 26.67 150.368 90)
+			(at 38.1 154.178 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23359,7 +23688,7 @@
 			)
 		)
 		(property "Value" "1kΩ"
-			(at 26.67 152.4 90)
+			(at 38.1 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23367,7 +23696,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal"
-			(at 26.67 156.718 90)
+			(at 38.1 160.528 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23376,7 +23705,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 154.94 0)
+			(at 38.1 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23385,7 +23714,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 26.67 154.94 0)
+			(at 38.1 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23562,7 +23891,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "AUDIO IN L"
+		(property "Value" "MONO 3.5mm"
 			(at 240.665 47.625 0)
 			(effects
 				(font
@@ -23629,7 +23958,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "3.5mm_Mono"
+		(property "Label" "IN L"
 			(at 255.27 38.0999 0)
 			(effects
 				(font
@@ -23660,7 +23989,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 45.72 152.4 0)
+		(at 57.15 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23669,7 +23998,7 @@
 		(fields_autoplaced yes)
 		(uuid "db30d653-7046-48ad-acf5-26356d8563a2")
 		(property "Reference" "#PWR02"
-			(at 45.72 158.75 0)
+			(at 57.15 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23678,7 +24007,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 45.72 157.48 0)
+			(at 57.15 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23686,7 +24015,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 152.4 0)
+			(at 57.15 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23695,7 +24024,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 152.4 0)
+			(at 57.15 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23704,7 +24033,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 45.72 152.4 0)
+			(at 57.15 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23810,7 +24139,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "B"
+		(property "Value" "MONO 3.5mm"
 			(at 158.115 107.315 0)
 			(effects
 				(font
@@ -23877,7 +24206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "B"
+		(property "Label" "B"
 			(at 172.72 97.7899 0)
 			(effects
 				(font
@@ -24589,7 +24918,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Potentiometer")
+		(lib_id "Device:R_Potentiometer_MountingPin")
 		(at 213.36 22.86 0)
 		(mirror x)
 		(unit 1)
@@ -24616,7 +24945,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Desval:Potentiometer_Alpha_RD901F-40-00D_Single_Vertical"
+		(property "Footprint" "Desval:Potentiometer_Alps_RK09K_Single_Vertical"
 			(at 213.36 22.86 0)
 			(effects
 				(font
@@ -24634,7 +24963,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Potentiometer"
+		(property "Description" "Potentiometer with a mounting pin"
 			(at 213.36 22.86 0)
 			(effects
 				(font
@@ -24643,7 +24972,7 @@
 				(hide yes)
 			)
 		)
-		(property "Display" "C"
+		(property "Label" "C"
 			(at 213.36 22.86 0)
 			(effects
 				(font
@@ -24660,6 +24989,9 @@
 		)
 		(pin "1"
 			(uuid "dff98f5c-c939-4343-95c1-1fe04beec5ee")
+		)
+		(pin "MP"
+			(uuid "e0c0597d-9ead-45b7-9f20-12ae9c05321e")
 		)
 		(instances
 			(project "DaisySeedThingie"
@@ -24879,7 +25211,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "fbdd36ac-8b91-4d5c-bb02-2bff32270f4c")
 		(property "Reference" "J9"
 			(at 215.9 162.5599 0)
@@ -24890,13 +25221,14 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AUDIO OUT"
+		(property "Value" "JST 01x03"
 			(at 215.9 165.0999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical"
@@ -24924,6 +25256,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Label" "AUDIO OUT"
+			(at 220.726 164.592 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"

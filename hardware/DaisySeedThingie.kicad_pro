@@ -801,5 +801,8 @@
       "Root"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "EMAIL": "<paul.f.burdette@gmail.com>",
+    "GITHUB": "/Desval27/DaisySeedThingie"
+  }
 }
