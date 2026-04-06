@@ -16,7 +16,7 @@ All 40 Daisy PINs are available on both sides of the board with those on the lef
 - JST connectors are provided to breakout the Audio in/out and MIDI in/out signals to external jacks (1/4" Phono, 5-pin DIN, etc.).
 - Jumpers are provided to change the configuration between TRS MIDI-A and TRS MIDI-B.  The default configuration is MIDI-A.  If MIDI-B is desired then the jumpers for MIDI-A need to be cut and those for MIDI-B bridged.
 
-![Rendered PCB Image](DaisySeedThingie.png)
+![Rendered PCB Image](hardware/DaisySeedThingie.png)
 
 ## ⚠️ Disclaimer
 
