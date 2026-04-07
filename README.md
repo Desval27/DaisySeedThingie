@@ -8,6 +8,11 @@ All 40 Daisy PINs are available on both sides of the board with those on the lef
 
 [Interactive Bill of Materials (BOM)](https://github.com/Desval27/DaisySeedThingie/blob/main/bom/ibom.html)
 
+Revsion A has several issues that are being corrected in Revision B.  Revision B is close to being finished.
+
+- Due to footprint and learning issues no 3.5mm jacks are actually connected.  They can be hacked on the backside.
+- All potentiometers are wired backwards.  CCW increases the voltage at the wiper while CW decreases it.
+
 ## Notes:
 - Push buttons are connected on one side to GND to be used with input pullup GPIO pins.
 - Potentiomenters are prewired on on the CW & CCW sides to +3V3 and GND.
