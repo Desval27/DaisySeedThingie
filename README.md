@@ -1,5 +1,7 @@
 # Prototyping Carrier Board for the Daisy Seed™ 
 
+WIP
+
 https://electro-smith.com/products/daisy-seed
 
 This PCB is designed to breakout all the PINs of the Daisy Seed along with additional components such as push buttons, LEDs, potentiometers, I<sup>2</sup>C, and SD card interfaces along with enough room for a typical 830 point breadboard.  
@@ -7,6 +9,11 @@ This PCB is designed to breakout all the PINs of the Daisy Seed along with addit
 All 40 Daisy PINs are available on both sides of the board with those on the left being mirrored/inverted for additional flexibility.
 
 [Interactive Bill of Materials (BOM)](https://github.com/Desval27/DaisySeedThingie/blob/main/bom/ibom.html)
+
+Revsion A has several issues that are being corrected in Revision B.  Revision B is close to being finished.
+
+- Due to footprint and learning issues no 3.5mm jacks are actually connected.  They can be hacked on the backside.
+- All potentiometers are wired backwards.  CCW increases the voltage at the wiper while CW decreases it.
 
 ## Notes:
 - Push buttons are connected on one side to GND to be used with input pullup GPIO pins.
