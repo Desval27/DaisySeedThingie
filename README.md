@@ -1,7 +1,5 @@
 # Prototyping Carrier Board for the Daisy Seed™ 
 
-WIP
-
 https://electro-smith.com/products/daisy-seed
 
 This PCB is designed to breakout all the PINs of the Daisy Seed along with additional components such as push buttons, LEDs, potentiometers, I<sup>2</sup>C, and SD card interfaces along with enough room for a typical 830 point breadboard.  
