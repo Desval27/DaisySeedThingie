@@ -6,6 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "Daisy Seed Thingie")
+		(date "2026-04-06")
+		(rev "B")
 		(company "The House of Galahad")
 	)
 	(lib_symbols
@@ -17353,72 +17355,6 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 40.64 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "377989d5-ab3b-4e13-919f-48abd33d98ef")
-		(property "Reference" "#PWR065"
-			(at 40.64 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 40.64 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.64 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 40.64 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 40.64 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e2df4b96-5c64-4b32-bca2-90b0dd678fcf")
-		)
-		(instances
-			(project "DaisySeedThingie"
-				(path "/e16aa8e8-029e-4c85-96a5-88f157e594bc"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
 		(at 97.79 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -24366,73 +24302,6 @@
 			(project "DaisySeedThingie"
 				(path "/e16aa8e8-029e-4c85-96a5-88f157e594bc"
 					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 40.64 53.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5c42de7-2b7e-41fe-97e8-0462c114ef90")
-		(property "Reference" "H5"
-			(at 43.18 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 43.18 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 40.64 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mounting Hole with connection"
-			(at 40.64 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "45d0a6bc-25ae-456a-845e-18d1718992b9")
-		)
-		(instances
-			(project "DaisySeedThingie"
-				(path "/e16aa8e8-029e-4c85-96a5-88f157e594bc"
-					(reference "H5")
 					(unit 1)
 				)
 			)
