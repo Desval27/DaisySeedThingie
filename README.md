@@ -8,7 +8,16 @@ All 40 Daisy PINs are available on both sides of the board with those on the lef
 
 [Interactive Bill of Materials (BOM)](https://github.com/Desval27/DaisySeedThingie/blob/main/bom/ibom.html)
 
-Repository updated to Revision B.  Revision B is currently untested.
+## Reado to Order Gerber Files
+- [Default](hardware/gerber_to_order/DaisySeedThingie_254.0x167.64mm_for_Default.zip)
+- [Elecrow](hardware/gerber_to_order/DaisySeedThingie_254.0x167.64mm_for_Elecrow.zip)
+- [FusionPCB](hardware/gerber_to_order/DaisySeedThingie_254.0x167.64mm_for_FusionPCB.zip)
+- [JLCPCB](hardware/gerber_to_order/DaisySeedThingie_254.0x167.64mm_for_JLCPCB.zip)
+- [PCBWay](hardware/gerber_to_order/DaisySeedThingie_254.0x167.64mm_for_PCBWay.zip)
+
+## Status
+
+Repository updated to Revision B.  Revision B is currently being tested.
 
 Revsion A has several issues that are being corrected in Revision B.  Revision B is close to being finished.
 
